@@ -21,6 +21,7 @@ if($validUser) {
 </head>
 <body>
   <form name="input" action="" method="post">
+    <p>Welcome to login page </p>
     <p><label for="username">Username:</label><input type="text" value="<?php if(isset($_POST["username"])) echo $_POST["username"]; ?>" id="username" name="username" /></p>
     <p><label for="password">Password:</label><input type="password" value="" id="password" name="password" /></p>
     <div class="error"><?php echo $errorMsg; ?></div>
